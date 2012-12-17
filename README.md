@@ -21,4 +21,4 @@ Custom controls from http://jfxtras.org are used.
 
 Comments are really welcome.
 
-JosÃ© Pereda - http://jperedadnr.blogspot.com.es
+José Pereda - http://jperedadnr.blogspot.com.es
