@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="root" xmlns:fx="http://javafx.com/fxml" fx:controller="arduinofx.ArduinoController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" blendMode="DARKEN" minHeight="72.0" minWidth="368.0" prefHeight="72.0" prefWidth="486.0" spacing="5.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+      <children>
+        <ImageView fitHeight="65.0" fitWidth="93.53932453023975" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/Raspi.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="75.75" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/arduino_logo.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="91.70396026611327" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/DIGI.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="186.99990000000253" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/oracle.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="42.1999626159668" fitWidth="115.93396613401953" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/ensemble-logo.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+    </HBox>
+    <VBox id="VBox" alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="100.0" prefWidth="687.0" spacing="15.0">
+      <children>
+        <Text scaleX="6.093705056212842" scaleY="4.252395548647111" strokeType="OUTSIDE" strokeWidth="0.0" text="ArduinoFX">
+          <effect>
+            <DropShadow color="#0c9900" height="3.0" offsetX="1.0" offsetY="1.0" radius="1.0" width="3.0">
+              <input>
+                <InnerShadow color="#00993d" height="5.0" radius="2.0" width="5.0" />
+              </input>
+            </DropShadow>
+          </effect>
+        </Text>
+        <Text scaleX="1.6075490919808815" scaleY="1.4421051991962694" strokeType="OUTSIDE" strokeWidth="0.0" text="A JavaFX based simple GUI for Home Automation">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Text>
+        <Text fill="#216600" scaleX="1.6075490919808815" scaleY="1.4385707152703593" strokeType="OUTSIDE" strokeWidth="0.0" text="Oracle Java Embedded Suite 7.0 - Raspberry Pi - Arduino &amp; XBee             @JPeredaDnr">
+          <effect>
+            <DropShadow color="#086600" height="3.0" radius="1.0" width="3.0" />
+          </effect>
+          <font>
+            <Font name="System Italic" size="10.0" fx:id="x1" />
+          </font>
+        </Text>
+      </children>
+    </VBox>
+    <AnchorPane layoutX="60.0" layoutY="114.0" prefHeight="365.0" prefWidth="719.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" layoutX="28.0" spacing="5.0">
+          <children>
+            <VBox fx:id="vbox" prefHeight="90.0" prefWidth="631.0">
+              <children>
+                <Label id="labTime" fx:id="lblTime" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" prefWidth="408.0" text="Last Reading:">
+                  <font>
+                    <Font name="System Italic" size="12.0" />
+                  </font>
+                </Label>
+              </children>
+            </VBox>
+            <AnchorPane prefHeight="299.375" prefWidth="640.0" styleClass="roundedAnchorPane">
+              <children>
+                <VBox id="VBox" alignment="CENTER" prefHeight="242.0" prefWidth="601.9046783447266" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <children>
+                    <HBox id="HBox" fx:id="hbox" alignment="CENTER" prefWidth="465.0" spacing="15.0" VBox.vgrow="NEVER">
+                      <children>
+                        <Button fx:id="btnEvolution" contentDisplay="TOP" mnemonicParsing="false" onAction="#getEvolution" prefHeight="22.9609375" prefWidth="79.0" text="Evolution" />
+                      </children>
+                    </HBox>
+                    <HBox fx:id="hbox2" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                      <children>
+                        <ProgressIndicator id="pgrogres" fx:id="progress" prefHeight="198.00000190734863" prefWidth="76.0" />
+                      </children>
+                    </HBox>
+                  </children>
+                </VBox>
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <HBox fx:id="hboxStatus" alignment="CENTER_LEFT" maxHeight="40.0" prefHeight="40.0" prefWidth="300.983154296875" spacing="10.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="14.0">
+      <children>
+        <Label fx:id="lblStatus" font="$x1" text="Status" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@arduino.css" />
+  </stylesheets>
+</AnchorPane>
