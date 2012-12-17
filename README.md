@@ -3,10 +3,13 @@ ArduinoFX-client
 
 JavaFX based client for ArduinoFX project
 
-Please, read full description here:
+Please, read full description of hardware setup here:
 
 http://jperedadnr.blogspot.com.es/2012/12/arduinofx-javafx-gui-for-home.html
 
+and here for description of installation of embedded server:
+
+http://jperedadnr.blogspot.com.es/2012/12/arduinofx-javafx-gui-for-home_17.html
 
 The JavaFX application connects to a server (See https://github.com/jperedadnr/ArduinoFX-server) to grab via RESTful
 web services the values of the measures stored in an embedded database.
