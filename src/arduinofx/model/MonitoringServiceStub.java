@@ -16,7 +16,7 @@ public class MonitoringServiceStub implements MonitoringService {
     /*
      * SET YOUR SERVER IP AND PORT HERE
      */
-    public static final String rutaServer="http://192.168.0.39:8080";  
+    public static final String urlServer="http://192.168.0.39:8080";  
     
     private IObservableMeasure lastMeasure=null;
     private ArrayList<IObservableMeasure> chartMeasures=null;

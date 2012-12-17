@@ -331,7 +331,7 @@ public class ArduinoController implements Initializable {
          * 4. SimpleIndicator and status label related
          */
         hboxStatus.getChildren().add(0, indicator);
-        lblStatus.setText("Connection established to "+MonitoringServiceStub.rutaServer);
+        lblStatus.setText("Connection established to "+MonitoringServiceStub.urlServer);
         btnEvolution.setDisable(false);
         
         BooleanProperty error=new SimpleBooleanProperty(false);
@@ -349,7 +349,7 @@ public class ArduinoController implements Initializable {
                         if(!t1.booleanValue()){
                             indicator.setInnerColor(Color.rgb(0,180,0).brighter());
                             indicator.setOuterColor(Color.rgb(0,180,0).darker());
-                            lblStatus.setText("Connection established to "+MonitoringServiceStub.rutaServer);
+                            lblStatus.setText("Connection established to "+MonitoringServiceStub.urlServer);
                             btnEvolution.setDisable(false);
                         } else {
                             indicator.setInnerColor(Color.rgb(180,0,0).brighter());

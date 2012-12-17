@@ -26,7 +26,7 @@ public class LastHT implements Runnable {
          */
         URL theJsonUrl=null;
         try {
-            theJsonUrl = new URL(MonitoringServiceStub.rutaServer+"/embedded/last");            
+            theJsonUrl = new URL(MonitoringServiceStub.urlServer+"/embedded/last");            
         } catch (MalformedURLException ex) {
             System.out.println("Error url: " + ex.getMessage());
             MonitoringServiceStub.getInstance().setError(true);

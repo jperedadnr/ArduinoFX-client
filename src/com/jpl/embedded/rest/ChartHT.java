@@ -43,7 +43,7 @@ public class ChartHT implements Runnable {
          */
         URL theJsonUrl=null;
         try {
-            theJsonUrl = new URL(MonitoringServiceStub.rutaServer+"/embedded/list?tam="+tam+"&ini="+calIni+"&end="+calFin);            
+            theJsonUrl = new URL(MonitoringServiceStub.urlServer+"/embedded/list?tam="+tam+"&ini="+calIni+"&end="+calFin);            
         } catch (MalformedURLException ex) {
             System.out.println("Error url: " + ex.getMessage());
             MonitoringServiceStub.getInstance().setError(true);
